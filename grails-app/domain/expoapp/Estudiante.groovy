@@ -2,10 +2,10 @@ package expoapp
 
 class Estudiante {
 
-    String nombre
-    String apellido
-    String email
-    String celular
+    String nombre//
+    String apellido//
+    String email//
+    String celular//
     String colegio
     String opcion_carrera1
     String opcion_carrera2
