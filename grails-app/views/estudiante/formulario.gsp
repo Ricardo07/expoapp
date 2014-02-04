@@ -45,7 +45,8 @@
     %{--<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Follow us on Twitter</span></a>--}%
 %{--</div>--}%
 <!-- Questionnaire form -->
-<g:form id="questionnaire-form" class="forms" name="questionnaire-form" autocomplete="on" action="registrarestudiante">
+
+<g:form id="questionnaire-form" class="forms" name="questionnaire-form" autocomplete="on" action="registrarEstudiante">
 <!-- Questionnaire Tab 1 -->
 <div class="qf-1">
     <!-- Page no. info -->
@@ -259,60 +260,63 @@
 
 <div class="clrfx mt-10"></div>
 <div class="clrfx mt-10"></div>
+
 <!-- opcion_carrera3 input -->
 <div class="field">
-    <select name="opcion_carrera3" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
-        <option value="" disabled="disabled" selected="selected" class="disabled">Carrera (opcional)</option>
+    <g:textField name="opcion_carrera3" placeholder="Opcion Carrera 3"/>
+    %{----}%
+    %{--<select name="opcion_carrera3" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">--}%
+        %{--<option value="" disabled="disabled" selected="selected" class="disabled">Carrera (opcional)</option>--}%
 
-        <option value="Administración de Empresas">1. Administración de Empresas</option>
+        %{--<option value="Administración de Empresas">1. Administración de Empresas</option>--}%
 
-        <option value="Administración Hotelera">2. Administración Hotelera</option>
+        %{--<option value="Administración Hotelera">2. Administración Hotelera</option>--}%
 
-        <option value="Arquitectura">3. Arquitectura</option>
+        %{--<option value="Arquitectura">3. Arquitectura</option>--}%
 
-        <option value="Comunicación  Social">4. Comunicación  Social</option>
+        %{--<option value="Comunicación  Social">4. Comunicación  Social</option>--}%
 
-        <option value="Derecho">5. Derecho</option>
+        %{--<option value="Derecho">5. Derecho</option>--}%
 
-        <option value="Ecología y Gestión Ambiental">6. Ecología y Gestión Ambiental</option>
+        %{--<option value="Ecología y Gestión Ambiental">6. Ecología y Gestión Ambiental</option>--}%
 
-        <option value="Economía">7. Economía</option>
+        %{--<option value="Economía">7. Economía</option>--}%
 
-        <option value="Educación Básica">8. Educación Básica</option>
+        %{--<option value="Educación Básica">8. Educación Básica</option>--}%
 
-        <option value="Enfermería">9. Enfermería</option>
+        %{--<option value="Enfermería">9. Enfermería</option>--}%
 
-        <option value="Estomatología">10. Estomatología</option>
+        %{--<option value="Estomatología">10. Estomatología</option>--}%
 
-        <option value="Filosofía">11. Filosofía</option>
+        %{--<option value="Filosofía">11. Filosofía</option>--}%
 
-        <option value="Gestión Financiera y Auditoría">12. Gestión Financiera y Auditoría</option>
+        %{--<option value="Gestión Financiera y Auditoría">12. Gestión Financiera y Auditoría</option>--}%
 
-        <option value="Ingeniería Civil">13. Ingeniería Civil</option>
+        %{--<option value="Ingeniería Civil">13. Ingeniería Civil</option>--}%
 
-        <option value="Ingeniería Electromecánica">14. Ingeniería Electromecánica</option>
+        %{--<option value="Ingeniería Electromecánica">14. Ingeniería Electromecánica</option>--}%
 
-        <option value="Ingeniería Electrónica">15. Ingeniería Electrónica</option>
+        %{--<option value="Ingeniería Electrónica">15. Ingeniería Electrónica</option>--}%
 
-        <option value="Ingeniería Industrial">16. Ingeniería Industrial</option>
+        %{--<option value="Ingeniería Industrial">16. Ingeniería Industrial</option>--}%
 
-        <option value="Ingeniería de Sistemas y Computación">17. Ingeniería de Sistemas y Computación</option>
+        %{--<option value="Ingeniería de Sistemas y Computación">17. Ingeniería de Sistemas y Computación</option>--}%
 
-        <option value="Ingeniería Telemática">18. Ingeniería Telemática</option>
+        %{--<option value="Ingeniería Telemática">18. Ingeniería Telemática</option>--}%
 
-        <option value="Medicina">19. Medicina</option>
+        %{--<option value="Medicina">19. Medicina</option>--}%
 
-        <option value="Mercadotecnia">20. Mercadotecnia</option>
+        %{--<option value="Mercadotecnia">20. Mercadotecnia</option>--}%
 
-        <option value="Psicología">21. Psicología</option>
+        %{--<option value="Psicología">21. Psicología</option>--}%
 
-        <option value="Terapia Física">22. Terapia Física</option>
+        %{--<option value="Terapia Física">22. Terapia Física</option>--}%
 
-        <option value="Nutrición y Dietética">23. Nutrición y Dietética</option>
+        %{--<option value="Nutrición y Dietética">23. Nutrición y Dietética</option>--}%
 
 
 
-    </select>
+    %{--</select>--}%
     <div id="arrow-select"></div>
     <svg id="arrow-select-svg"></svg>
     <span class="entypo-book icon"></span>
