@@ -38,29 +38,23 @@
 <input id="tab-1" class="tab-1-selector" type="radio" name="q-tabs" checked="checked" />
 <input id="tab-2" class="tab-2-selector" type="radio" name="q-tabs" />
 <input id="tab-3" class="tab-3-selector" type="radio" name="q-tabs" />
-<!-- Social buttons -->
-%{--<div class="sb">--}%
-    %{--<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Like us on Facebook</span></a>--}%
-    %{--<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Find us in Circles</span></a>--}%
-    %{--<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Follow us on Twitter</span></a>--}%
-%{--</div>--}%
+
 <!-- Questionnaire form -->
 
 <g:form id="questionnaire-form" class="forms" name="questionnaire-form" autocomplete="on" action="registrarEstudiante">
 <!-- Questionnaire Tab 1 -->
 <div class="qf-1">
-    <!-- Page no. info -->
 
-    %{----Informacion de paginacion--}%
-    %{--<span class="pagination">Page 1 of 3</span>--}%
     <!-- Title -->
     <div class="title"><span>Nos gustaría conocerte, registrate y</span>gana un iPad!</div>
+
     <!-- Intro text -->
     <p class="intro"><b></b></p>
-    %{--<p class="intro"><b>Don't be shy, let's work together.</b> Please describe your company briefly &amp; and illustrate your activities for our better understanding.</p>--}%
+
     <!-- Left block -->
     <div class="w-47 mr-6">
         <div class="clrfx mt-10 mb-30 bt"><span class="inner-title">Información Personal</span></div>
+
         <!-- Nombre input -->
         <div class="field">
             <g:textField name="nombre" placeholder="Nombre" required=""></g:textField>
@@ -68,6 +62,7 @@
             <span class="entypo-user icon"></span>
             <span class="slick-tip left">Nombre</span>
         </div>
+
         <!-- Apellido input -->
         <div class="field">
             <g:textField name="apellido" placeholder="Apellido" required=""></g:textField>
@@ -75,6 +70,7 @@
             <span class="entypo-user icon"></span>
             <span class="slick-tip left">Apellido</span>
         </div>
+
         <!-- Email input -->
         <div class="field">
             <g:textField name="email" placeholder="Email" required=""></g:textField>
@@ -82,21 +78,6 @@
             <span class="entypo-mail icon"></span>
             <span class="slick-tip left">Email</span>
         </div>
-        <!-- Industry input -->
-        %{--<div class="field">--}%
-            %{--<select name="industry" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">--}%
-                %{--<option value="" disabled="disabled" selected="selected" class="disabled">Industry</option>--}%
-                %{--<option value="Construction">1. Construction</option>--}%
-                %{--<option value="Consulting">2. Consulting</option>--}%
-                %{--<option value="Travel">3. Travel</option>--}%
-                %{--<option value="Technology">4. Technology</option>--}%
-                %{--<option value="Other">5. Other</option>--}%
-            %{--</select>--}%
-            %{--<div id="arrow-select"></div>--}%
-            %{--<svg id="arrow-select-svg"></svg>--}%
-            %{--<span class="entypo-book icon"></span>--}%
-            %{--<span class="slick-tip left">Your industry</span>--}%
-        %{--</div>--}%
 
         <!-- Móvil input -->
         <div class="field">
@@ -105,6 +86,7 @@
             <span class="entypo-mobile icon"></span>
             <span class="slick-tip left">#Móvil</span>
         </div>
+
         <!-- Colegio input -->
         <div class="field">
         <g:textField name="colegio" placeholder="Colegio de precedencia" required=""></g:textField>
@@ -112,6 +94,7 @@
             <span class="entypo-home icon"></span>
             <span class="slick-tip left">Colegio</span>
         </div>
+
         <!-- Twitter input -->
         <div class="field">
             <g:textField name="twitter" placeholder="Twitter (opcional)"></g:textField>
@@ -120,17 +103,18 @@
             <span class="slick-tip left">Twitter (opcional)</span>
         </div>
     </div>
+
     <!-- Right block -->
     <div class="w-47">
         <div class="clrfx mt-10 mb-30 bt"><span class="inner-title">INTERÉS PROFESIONAL </span></div>
 
-<div class="clrfx mt-20"></div>
+        <div class="clrfx mt-20"></div>
         <p class="ratings"><span class="entypo-bookmarks"></span>Cuentanos, qué te gustaría estudiar?</p>
 
+        <div class="clrfx mt-10"></div>
+        <div class="clrfx mt-10"></div>
+        <div class="clrfx mt-10"></div>
 
-        <div class="clrfx mt-10"></div>
-        <div class="clrfx mt-10"></div>
-        <div class="clrfx mt-10"></div>
         <!-- opcion_carrera1 input -->
         <div class="field">
             <select name="opcion_carrera1" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className" required="">
@@ -181,9 +165,6 @@
                 <option value="Terapia Física">22. Terapia Física</option>
 
                 <option value="Nutrición y Dietética">23. Nutrición y Dietética</option>
-
-
-
             </select>
             <div id="arrow-select"></div>
             <svg id="arrow-select-svg"></svg>
@@ -191,12 +172,10 @@
             <span class="slick-tip left">Carrera</span>
         </div>
 
-
-
-
-
     <div class="clrfx mt-10"></div>
     <div class="clrfx mt-10"></div>
+
+
     <!-- opcion_carrera2 input -->
     <div class="field">
         <select name="opcion_carrera2" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
@@ -247,9 +226,6 @@
             <option value="Terapia Física">22. Terapia Física</option>
 
             <option value="Nutrición y Dietética">23. Nutrición y Dietética</option>
-
-
-
         </select>
         <div id="arrow-select"></div>
         <svg id="arrow-select-svg"></svg>
@@ -263,137 +239,14 @@
 
 <!-- opcion_carrera3 input -->
 <div class="field">
-    <g:textField name="opcion_carrera3" placeholder="Opcion Carrera 3"/>
-    %{----}%
-    %{--<select name="opcion_carrera3" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">--}%
-        %{--<option value="" disabled="disabled" selected="selected" class="disabled">Carrera (opcional)</option>--}%
-
-        %{--<option value="Administración de Empresas">1. Administración de Empresas</option>--}%
-
-        %{--<option value="Administración Hotelera">2. Administración Hotelera</option>--}%
-
-        %{--<option value="Arquitectura">3. Arquitectura</option>--}%
-
-        %{--<option value="Comunicación  Social">4. Comunicación  Social</option>--}%
-
-        %{--<option value="Derecho">5. Derecho</option>--}%
-
-        %{--<option value="Ecología y Gestión Ambiental">6. Ecología y Gestión Ambiental</option>--}%
-
-        %{--<option value="Economía">7. Economía</option>--}%
-
-        %{--<option value="Educación Básica">8. Educación Básica</option>--}%
-
-        %{--<option value="Enfermería">9. Enfermería</option>--}%
-
-        %{--<option value="Estomatología">10. Estomatología</option>--}%
-
-        %{--<option value="Filosofía">11. Filosofía</option>--}%
-
-        %{--<option value="Gestión Financiera y Auditoría">12. Gestión Financiera y Auditoría</option>--}%
-
-        %{--<option value="Ingeniería Civil">13. Ingeniería Civil</option>--}%
-
-        %{--<option value="Ingeniería Electromecánica">14. Ingeniería Electromecánica</option>--}%
-
-        %{--<option value="Ingeniería Electrónica">15. Ingeniería Electrónica</option>--}%
-
-        %{--<option value="Ingeniería Industrial">16. Ingeniería Industrial</option>--}%
-
-        %{--<option value="Ingeniería de Sistemas y Computación">17. Ingeniería de Sistemas y Computación</option>--}%
-
-        %{--<option value="Ingeniería Telemática">18. Ingeniería Telemática</option>--}%
-
-        %{--<option value="Medicina">19. Medicina</option>--}%
-
-        %{--<option value="Mercadotecnia">20. Mercadotecnia</option>--}%
-
-        %{--<option value="Psicología">21. Psicología</option>--}%
-
-        %{--<option value="Terapia Física">22. Terapia Física</option>--}%
-
-        %{--<option value="Nutrición y Dietética">23. Nutrición y Dietética</option>--}%
-
-
-
-    %{--</select>--}%
-    <div id="arrow-select"></div>
-    <svg id="arrow-select-svg"></svg>
+    <g:textArea name="opcion_carrera3" placeholder="Escriba aquí la carrera de interés, en caso de que no haya sido especificada arriba (opcional)" ></g:textArea>
+    %{--<textarea name="about" placeholder="About your company" id="about" class="message" required></textarea>--}%
     <span class="entypo-book icon"></span>
-    <span class="slick-tip left">Carrera (opional)</span>
+    <span class="slick-tip left">Carrera en específica (opcional)</span>
 </div>
 
-    <!-- Tick checboxes 1 -->
-        %{--<div class="field">--}%
-            %{--<p class="ratings"><span class="entypo-bookmarks"></span>What sets you apart from others?</p>--}%
-            %{--<div class="clrfx mt-20"></div>--}%
-            %{--<!-- Option 1 -->--}%
-            %{--<div class="w-30 mr-5">--}%
-                %{--<input type="checkbox" id="low-prices" name="low-prices" />--}%
-                %{--<label for="low-prices" class="tick"><span>Lower prices</span></label>--}%
-            %{--</div>--}%
-            %{--<!-- Option 2 -->--}%
-            %{--<div class="w-30 mr-5">--}%
-                %{--<input type="checkbox" id="better-support" name="better-support" />--}%
-                %{--<label for="better-support" class="tick"><span>Better support</span></label>--}%
-            %{--</div>--}%
-            %{--<!-- Option 3 -->--}%
-            %{--<div class="w-30">--}%
-                %{--<input type="checkbox" id="faster-response" name="faster-response" />--}%
-                %{--<label for="faster-response" class="tick"><span>Faster response</span></label>--}%
-            %{--</div>--}%
-            %{--<div class="clrfx mb-20"></div>--}%
-            %{--<!-- Option 4 -->--}%
-            %{--<div class="w-30 mr-5">--}%
-                %{--<input type="checkbox" id="fast-delivery" name="fast-delivery" />--}%
-                %{--<label for="fast-delivery" class="tick"><span>Fast delivery</span></label>--}%
-            %{--</div>--}%
-            %{--<!-- Option 5 -->--}%
-            %{--<div class="w-30 mr-5">--}%
-                %{--<input type="checkbox" id="fancy-office" name="fancy-office" />--}%
-                %{--<label for="fancy-office" class="tick"><span>Fancy office</span></label>--}%
-            %{--</div>--}%
-            %{--<!-- Option 6 -->--}%
-            %{--<div class="w-30">--}%
-                %{--<input type="checkbox" id="slick-approach" name="slick-approach" />--}%
-                %{--<label for="slick-approach" class="tick"><span>Slick approach</span></label>--}%
-            %{--</div>--}%
-        %{--</div>--}%
-
-
-
-        %{--<div class="clrfx mt-10"></div>--}%
-        %{--<!-- Block checboxes -->--}%
-        %{--<div class="field">--}%
-            %{--<p class="ratings"><span class="entypo-users"></span>How many employees does your company have?</p>--}%
-            %{--<fieldset class="blocks" id="employees">--}%
-                %{--<!-- Option 1 -->--}%
-                %{--<input type="radio" id="employees-1" name="employees" value="up to 5" />--}%
-                %{--<label for="employees-1">up to 5</label>--}%
-                %{--<!-- Option 2 -->--}%
-                %{--<input type="radio" id="employees-2" name="employees" value="up to 50" checked="checked" />--}%
-                %{--<label for="employees-2">up to 50</label>--}%
-                %{--<!-- Option 3 -->--}%
-                %{--<input type="radio" id="employees-3" name="employees" value="up to 100" />--}%
-                %{--<label for="employees-3">up to 100</label>--}%
-                %{--<!-- Option 4 -->--}%
-                %{--<input type="radio" id="employees-4" name="employees" value="up to 500" />--}%
-                %{--<label for="employees-4">up to 500</label>--}%
-                %{--<!-- Option 5 -->--}%
-                %{--<input type="radio" id="employees-5" name="employees" value="above 500" />--}%
-                %{--<label for="employees-5">above 500</label>--}%
-            %{--</fieldset>--}%
-        %{--</div>--}%
-
-
-        %{--<div class="clrfx mt-20"></div>--}%
-        %{--<!-- About company input -->--}%
-        %{--<div class="field">--}%
-            %{--<textarea name="about" placeholder="About your company" id="about" class="message" required></textarea>--}%
-            %{--<span class="entypo-comment icon"></span>--}%
-            %{--<span class="slick-tip left">Company overview</span>--}%
-        %{--</div>--}%
     </div>
+
     <!-- Pages arrows -->
     <div class="w-100 mt-10">
         <!-- Arrow next -->

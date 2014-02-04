@@ -18,6 +18,7 @@ class EstudianteController {
         Estudiante estudiante = new Estudiante(params)
 
         if(estudiante.validate()){
+            estudiante.save()
             redirect(action: 'formulario')
         }else{
             render "No se pudo registrar.(implementacion pendiente)"

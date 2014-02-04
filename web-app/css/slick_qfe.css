@@ -414,21 +414,21 @@ When adjusting the reset is adviced to check up the elements on your page, as th
 }
 #slick .field textarea {
 	max-height: 146px;
-	height: 146px;
+	height: 106px;
 	resize: none;
 	overflow: auto;
 }
 #slick .field textarea.message {
-	height: 166px;
-	max-height: 166px;
+	height: 106px;
+	max-height: 106px;
 }
 #slick .field textarea.project {
-	height: 164px;
-	max-height: 164px;
+	height: 104px;
+	max-height: 104px;
 }
 #slick .field textarea:focus {
-	height: 200px;
-	max-height: 200px;
+	height: 106px;
+	max-height: 106px;
 }
 #slick .field > input:hover,
 #slick .field > input:focus,
