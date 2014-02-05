@@ -13,10 +13,16 @@
     <meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'slick_ffsp.css')}" media="screen" />
     <!-- Forms stylesheet -->
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'slick_qfe.css')}" media="screen" />
     <!-- / Forms stylesheet -->
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css',file: 'demo.css')}" media="screen" />
+
+
+
     %{--<!--[if IE 9]>--}%
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="${resource(dir: 'js',file: 'placeholder.js')}"></script>
@@ -614,21 +620,26 @@
 </g:form>
 <!-- / Questionnaire form -->
 <!-- Terms and conditions -->
-<div id="terms-popup" class="terms-window">
-    <a href="#close" class="close-overlay"></a>
-    <div>
-        <a href="#close" class="close entypo-cancel-circled"></a>
-        <div class="title">Terms &amp; Conditions</div>
-        <p class="intro"><b>1. Lorem ipsum</b><br />
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        <p class="intro"><b>2. Dolor commodo</b><br />
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.	Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        <p class="intro"><b>3. Sit amet</b><br />
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-    </div>
-</div>
+
+
+
+%{--popup--}%
+
+%{--<div id="terms-popup" class="terms-window">--}%
+    %{--<a href="#close" class="close-overlay"></a>--}%
+    %{--<div>--}%
+        %{--<a href="#close" class="close entypo-cancel-circled"></a>--}%
+        %{--<div class="title">Terms &amp; Conditions</div>--}%
+        %{--<p class="intro"><b>1. Lorem ipsum</b><br />--}%
+            %{--Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />--}%
+            %{--Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>--}%
+        %{--<p class="intro"><b>2. Dolor commodo</b><br />--}%
+            %{--Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.	Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>--}%
+        %{--<p class="intro"><b>3. Sit amet</b><br />--}%
+            %{--Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />--}%
+            %{--Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>--}%
+    %{--</div>--}%
+%{--</div>--}%
 <!-- / Terms and conditions -->
 </section>
 

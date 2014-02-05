@@ -19,13 +19,23 @@ class EstudianteController {
 
         if(estudiante.validate()){
             estudiante.save()
-            redirect(action: 'formulario')
+            redirect( action: 'registrado')
         }else{
-            render "No se pudo registrar.(implementacion pendiente)"
+//            render "No se pudo registrar.(implementacion pendiente)"
+            redirect(action: 'formulario', model:[estudiante:estudiante])
         }
 
 
         println(params)
+    }
+
+    def registrado(){
+
+    }
+
+    def mostrarestudiantes(){
+        def lista = Estudiante.findAll()
+        render(lista)
     }
 
     def elegirEstudianteAleatorio(){
