@@ -103,10 +103,10 @@
 
         <!-- Twitter input -->
         <div class="field">
-            <g:textField name="twitter" placeholder="Twitter (opcional)"></g:textField>
+            <g:textField name="twitter" placeholder="Twitter ( OPCIONAL )"></g:textField>
             %{--<input name="web" placeholder="http://" type="text" id="web" />--}%
             <span class="entypo-twitter icon"></span>
-            <span class="slick-tip left">Twitter (opcional)</span>
+            <span class="slick-tip left">Twitter ( OPCIONAL )</span>
         </div>
     </div>
 
@@ -185,7 +185,7 @@
     <!-- opcion_carrera2 input -->
     <div class="field">
         <select name="opcion_carrera2" id="industry" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
-            <option value="" disabled="disabled" selected="selected" class="disabled">Carrera (opcional)</option>
+            <option value="" disabled="disabled" selected="selected" class="disabled">Carrera ( OPCIONAL )</option>
 
             <option value="Administración de Empresas">1. Administración de Empresas</option>
 
@@ -236,7 +236,7 @@
         <div id="arrow-select"></div>
         <svg id="arrow-select-svg"></svg>
         <span class="entypo-book icon"></span>
-        <span class="slick-tip left">Carrera (opcional)</span>
+        <span class="slick-tip left">Carrera (OPCIONAL)</span>
     </div>
 
 
@@ -245,10 +245,10 @@
 
 <!-- opcion_carrera3 input -->
 <div class="field">
-    <g:textArea name="opcion_carrera3" placeholder="Escriba aquí la carrera de interés, en caso de que no haya sido especificada arriba (opcional)" ></g:textArea>
+    <g:textArea name="opcion_carrera3" placeholder="Escriba aquí la carrera de interés, en caso de que no haya sido especificada arriba ( OPCIONAL )" ></g:textArea>
     %{--<textarea name="about" placeholder="About your company" id="about" class="message" required></textarea>--}%
     <span class="entypo-book icon"></span>
-    <span class="slick-tip left">Carrera en específica (opcional)</span>
+    <span class="slick-tip left">Carrera en específica ( OPCIONAL )</span>
 </div>
 
     </div>

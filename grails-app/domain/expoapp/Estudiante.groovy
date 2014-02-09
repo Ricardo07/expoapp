@@ -12,18 +12,6 @@ class Estudiante {
     String opcion_carrera3
     String twitter
 
-//    Estudiante(name, last_name, email, cell, school, option1, option2, option3, twitter){
-//        this.nombre = name
-//        this.apellido = last_name
-//        this.email = email
-//        this.celular = cell
-//        this.colegio = school
-//        this.opcion_carrera1 = option1
-//        this.opcion_carrera2 = option2
-//        this.opcion_carrera3 = option3
-//        this.twitter = twitter
-//    }
-
     static constraints = {
         nombre minSize: 3, nullable: false
         apellido minSize: 3, nullable: false
