@@ -81,21 +81,25 @@ class EstudianteController {
 
     def exportToExcel(){
         //aqui se implementara la exportacion a excel de la lista de estudiantes.\
-        def Estudiantes = Estudiante.listOrderByOpcion_carrera1()
+        try {
 
-        def headers = ['Nombre', 'Apellido', 'Email', 'Celular', 'Colegio', 'Opcion Carrera 1', 'Opcion Carrera 2', 'Opcion Carrera 3', 'Twitter']
-        def withProperties = ['nombre', 'apellido', 'email', 'celular', 'colegio', 'opcion_carrera1', 'opcion_carrera2', 'opcion_carrera3', 'twitter']
+            //se ordenan los estudiantes por carrera
+            def Estudiantes = Estudiante.listOrderByOpcion_carrera1()
 
-        //Mediante WebXLSReporter(Downloadable via controller)
-        //De este modo el archivo se descargara desde el browser
-        new WebXlsxExporter().with{
-            setResponseHeaders(response)
-            fillHeader(headers)
-            add(Estudiantes, withProperties)
-            save(response.outputStream)
+            def headers = ['Nombre', 'Apellido', 'Email', 'Celular', 'Colegio', 'Opcion Carrera 1', 'Opcion Carrera 2', 'Opcion Carrera 3', 'Twitter']
+            def withProperties = ['nombre', 'apellido', 'email', 'celular', 'colegio', 'opcion_carrera1', 'opcion_carrera2', 'opcion_carrera3', 'twitter']
+
+            //Mediante WebXLSReporter(Downloadable via controller)
+            //De este modo el archivo se descargara desde el browser
+            new WebXlsxExporter().with{
+                setResponseHeaders(response)
+                fillHeader(headers)
+                add(Estudiantes, withProperties)
+                save(response.outputStream)
+            }
         }
-
-        //TODO: controlar manejo de errores
-
+        catch (Exception e){
+            render e.message
+        }
     }
 }
