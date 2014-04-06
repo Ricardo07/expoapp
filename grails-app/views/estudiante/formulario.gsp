@@ -52,7 +52,7 @@
 <div class="qf-1">
 
     <!-- Title -->
-    <div class="title"><span>Nos gustaría conocerte, registrate y</span>gana un iPad!</div>
+    <div class="title"><span>Nos gustaría conocerte, registrate y</span>gana una Tablet!</div>
 
     <!-- Intro text -->
     <p class="intro"><b></b></p>

@@ -28,11 +28,15 @@ class EstudianteController {
 
             //TODO:implementar errores
             println estudiante.errors.fieldErrors
-            redirect(action: 'formulario', model:[estudiante:estudiante])
+            redirect(action: 'noregistrado', model:[estudiante:estudiante])
         }
     }
 
     def registrado(){
+
+    }
+
+    def noregistrado(){
 
     }
 

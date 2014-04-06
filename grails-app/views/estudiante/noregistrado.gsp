@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: ricardo
-  Date: 2/5/14
-  Time: 11:16 AM
+  Date: 2/4/14
+  Time: 10:45 PM
 --%>
 
 <!DOCTYPE html>
@@ -35,40 +35,15 @@
         <!-- Login form -->
         <div class="login-form">
             <!-- Title -->
-        <g:if test="${nombre}">
-            <div class="title">El ganador de la tablet es: </div>
-            <div class="clrfx mt-20"></div>
-            <div class="clrfx mt-20"></div>
-            <div class="title">Nombre: ${nombre} ${apellido}</div>
-            <div class="clrfx mt-20"></div>
-            <div class="title">Colegio: ${colegio}</div>
-            <div class="clrfx mt-20"></div>
-            <div class="title">Número: ${celular}</div>
-        </g:if>
-        <g:else test="${mensaje}">
-            <div class="title">${mensaje}</div>
-        </g:else>
-
-        <g:if test = "${lista}">
-            <div class="clrfx mt-20"></div>
-            <div class="title">--------------------------------------</div>
-            %{--<div class="clrfx mt-20"></div>--}%
-            <div class="title">Ganadores Pasados: </div>
-
-            <g:each in="${lista}">
-
-                <div class="clrfx mt-20"></div>
-                <div class="title">--->${it.nombre} ${it.apellido}<----</div>
-                <div class="clrfx mt-20"></div>
-                <div class="title">Colegio: ${it.colegio}</div>
-                <div class="clrfx mt-20"></div>
-                <div class="title">Número: ${it.celular}</div>
-
-            </g:each>
-
-        </g:if>
+            <div class="title">ERROR al llenar el formulario, inténtelo de nuevo ingresando los datos correctamente.</div>
             <!-- Intro text -->
             %{--<p class="intro"><b>Hi there.</b> Login with your favorite social network or registration account to access our user area and great community!</p>--}%
+            <form action="formulario.gsp" name="login" id="login" method="post">
+                <!-- Send button -->
+                <div class="clrfx mt-20"></div>
+                <input type="submit" value="Aceptar" class="send" form="login" name="boton_aceptar" />
+                %{--<g:link class="send" action="formulario">hey</g:link>--}%
+            </form>
         </div>
     </section>
 </div>
